@@ -1,10 +1,10 @@
 import './App.css';
+import Navbar from './components/Navbar/Navbar';
+import navbarData from './components/Navbar/data';
 
 function App() {
   return (
-    <div>
-      <h1>Hello world</h1>
-    </div>
+    <Navbar data={navbarData} />
   );
 }
 
