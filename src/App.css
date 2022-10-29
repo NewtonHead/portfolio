@@ -24,18 +24,44 @@
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
+a { 
+  color: var(--color-1);
+  text-decoration: none;
+  text-align: center;
+}
+
 .navbar {
   height: 3rem;
-  background-color: var(--color-2);
+  background-color: var(--color-3);
+  border-bottom-style: solid;
+  border-bottom-color: var(--color-2);
 }
 
 .navbar-dropdown-button {
-  visibility: hidden;
+  display: none;
 }
 
+.navbar-item-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-1);
+  background-color: var(--color-2);;
+}
+
+.navbar-item-button:hover, .navbar-item-button:active {
+  background-color:var(--color-3);
+  color: white;
+}
+
+
+
 @media only screen and (max-device-width: 600px) {
+  .hidden {
+    display: none;
+  }
+
   .navbar-dropdown-button {
-    visibility: visible;
     background-color: var(--color-3);
     border-color: var(--color-1);
     border-style: solid;
@@ -61,22 +87,13 @@
 
   .navbar-item-button {
     padding: 0.25rem 0 0.25rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-1);
     width: 100vw;
-    background-color: var(--color-2);;
   }
 
   #navbar-list {
     position: absolute;
     margin-top: 3rem;
     transform-origin: top center;
-  }
-
-  .hidden {
-    display: none;
   }
 
   .navbar-item-button {
@@ -87,11 +104,6 @@
     color: var(--color-1);
     width: 100vw;
     background-color: var(--color-2);
-  }
-
-  .navbar-item-button:hover, .navbar-item-button:active {
-    background-color:var(--color-1);
-    color: white;
   }
 
   @keyframes growDown {

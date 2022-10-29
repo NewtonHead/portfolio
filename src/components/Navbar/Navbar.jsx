@@ -3,25 +3,30 @@ import { useState } from "react";
 import {FaBars} from "react-icons/fa"
 
 function Navbar(props) {
-  const [className, setClassName] = useState('hidden');
+  const [hidden, isHidden] = useState(true);
+  const mediaQuerie = window.matchMedia('(max-width 600px)')
   
   const openDropdown = () => {
-    if (className == 'hidden') {
-      setClassName('');
+    if (hidden == true) {
+      isHidden(false)
       document.getElementById('navbar-list').style.animation = 'growDown 300ms ease-in-out forwards'
+      document.getElementById('navbar-list').classList.remove('hidden')
     } else {
-      setClassName('hidden')
+      isHidden(true)
       document.getElementById('navbar-list').style.animation = ''
+      document.getElementById('navbar-list').classList.add('hidden')
     }
   }
 
   return (
     <nav className="navbar">
       <span className="navbar-dropdown-button" onClick={openDropdown}><FaBars /></span>
-      <ul className={className} id="navbar-list">
+      <ul id="navbar-list" className="hidden">
         {props.data.map((data, index) =>{
           return (
-            <li className={data.className + ' noselect'} key={index}>{data.text}</li>
+            <li key={index}>
+              <a className={data.className + ' noselect'} href={"#" + data.text}>{data.text}</a>
+              </li>
           )
         })}
       </ul>
