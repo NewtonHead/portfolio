@@ -30,6 +30,10 @@ a {
   text-align: center;
 }
 
+li {
+  list-style: none;
+}
+
 .navbar {
   height: 3rem;
   background-color: var(--color-3);
@@ -46,12 +50,49 @@ a {
   align-items: center;
   justify-content: center;
   color: var(--color-1);
-  background-color: var(--color-2);;
 }
 
 .navbar-item-button:hover, .navbar-item-button:active {
   background-color:var(--color-3);
   color: white;
+}
+
+@media only screen and (min-device-width:601px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #navbar-list {
+    width: 66%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-item-button {
+    padding: 0.25rem;
+    position: relative;
+  }
+
+  .navbar-item-button::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-1);
+    transition: width 0.25s ease-out;
+  }
+
+  .navbar-item-button:hover::before {
+    width: 100%;
+    right: auto;
+    left: 0;
+  }
+  
 }
 
 
