@@ -8,6 +8,10 @@
   font-weight: 400;
 }
 
+h1 {
+  height: 100vh;
+}
+
 :root {
   --color-1: #FFCACA;
   --color-2: #372948;
@@ -39,6 +43,8 @@ li {
   background-color: var(--color-3);
   border-bottom-style: solid;
   border-bottom-color: var(--color-2);
+  position: sticky;
+  top: 0;
 }
 
 .navbar-dropdown-button {
