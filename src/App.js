@@ -1,10 +1,14 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import navbarData from './components/Navbar/data';
+import Welcome from './components/Welcome/Welcome';
 
 function App() {
   return (
-    <Navbar data={navbarData} />
+    <div>
+      <Welcome title="Santiago Lobo" subTitle="React Developer" buttonText="Check my work!"/>
+      <Navbar data={navbarData} />
+    </div>
   );
 }
 

@@ -8,10 +8,6 @@
   font-weight: 400;
 }
 
-h1 {
-  height: 100vh;
-}
-
 :root {
   --color-1: #FFCACA;
   --color-2: #372948;
@@ -101,7 +97,59 @@ li {
   
 }
 
+/* ---------------- */
 
+#welcome {
+  background-color: var(--color-3);
+  color: var(--color-1);
+  display: flex;
+  height: 100vh;
+  align-items:center;
+  justify-content:center;
+}
+
+#welcome-text {
+  font-size: 1.5rem;
+  height: 4rem;
+  margin: 1rem;
+}
+
+#welcome-text h2 {
+  font-size: 1.5rem;
+  height: 4rem;
+  margin: 1rem;
+}
+
+#workButton {
+  font-size: 1.5rem; 
+  color: var(--color-1);
+  background-color: var(--color-3);
+  -webkit-transition: background-color 400ms linear, color 400ms linear;
+          transition: background-color 400ms linear, color 400ms linear;
+  height: 2.5rem;
+  width: 15rem;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0.25rem;
+  border-color: var(--color-1);
+  margin: 1rem;
+}
+
+#workButton:hover {
+  background-color:var(--color-1);
+  color: white;
+  cursor: pointer;
+}
+
+#workButton:active {
+  background-color:var(--color-1);
+  color: white;
+}
+
+.card {
+  text-align: center;
+  position: absolute;
+}
 
 @media only screen and (max-device-width: 600px) {
   .hidden {
