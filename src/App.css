@@ -54,6 +54,12 @@ li {
   color: var(--almond);
 }
 
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media only screen and (min-device-width:601px) {
   .navbar {
     display: flex;
@@ -62,7 +68,7 @@ li {
   }
 
   #navbar-list {
-    width: 66%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -206,5 +212,100 @@ li {
     100% {
         transform: scaleY(1)
     }
+  }
+}
+
+/* --------- */
+
+#about {
+  height: 100vh;
+  background-color: white;
+}
+
+.container {
+  width: 60rem;
+  height: 20rem;
+  margin: auto;
+  margin-top: 5rem;
+  display: flex;
+}
+
+img {
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+  padding: 1rem;
+  
+}
+
+p {
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+  width: 40rem;
+  text-align: center;
+}
+
+#aboutTitle {
+  width: 5rem;
+  margin: auto;
+  margin-top: 5rem;
+  border-bottom-color: red;
+  border-bottom-style: solid;
+}
+
+@media only screen and (max-device-width: 601px) {
+  h2 {
+    border-bottom-style: solid;
+    border-bottom-color: var(--oxford-blue);
+    width: 8rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container {
+    height: 60rem;
+    width: 20rem;
+    flex-direction: column;
+  }
+
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 15rem;
+    height: 15rem;
+  }
+
+  #paragraph {
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    width: 15rem;
+    height: 5rem;
+    font-size: 1rem;
+  }
+
+  #skills {
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .skill {
+    font-size: 0.75rem;
+    height: 1.25rem;
+    margin: 0;
+  }
+
+  .tech {
+    margin: 0;
+    background-color: red;
+    width: 33%;
+  }
+
+  .level {
+    margin: 0;
+    background-color: blue;
+    width: 66%;
   }
 }
