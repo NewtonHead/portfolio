@@ -118,6 +118,7 @@ li {
 #welcome-text h2 {
   font-size: 1.5rem;
   height: 4rem;
+  width: inherit;
   margin: 1rem;
 }
 
@@ -134,6 +135,7 @@ li {
   border-radius: 0.25rem;
   border-color: var(--almond);
   margin: 1rem;
+  margin-top: 2rem;
 }
 
 #workButton:hover {
@@ -293,19 +295,29 @@ p {
 
   .skill {
     font-size: 0.75rem;
-    height: 1.25rem;
     margin: 0;
+    margin-bottom: 1rem;
   }
 
   .tech {
     margin: 0;
-    background-color: red;
+    background-color: var(--oxford-blue);
+    color: var(--almond);
+    font-weight: 600;
+    height: 100%;
     width: 33%;
+    padding: 0.33rem;
+    text-align: center;
   }
 
   .level {
+    text-align: center;
+    font-weight: 600;
+    color: var(--oxford-blue);
     margin: 0;
-    background-color: blue;
+    height: 100%;
+    background-color: var(--almond);
+    padding: 0.33rem;
     width: 66%;
   }
 }

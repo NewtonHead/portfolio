@@ -7,7 +7,7 @@ import About from './components/About/About';
 function App() {
   return (
     <div>
-      <Welcome title="Santiago Lobo" subTitle="React Developer" buttonText="Check my work!"/>
+      <Welcome title="Santiago Lobo" subTitle="React developer" buttonText="Check my work!"/>
       <Navbar data={navbarData} />
       <About />
     </div>

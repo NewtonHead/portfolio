@@ -11,25 +11,25 @@ function About() {
 
         <ul id="skills">
           <li class="skill">
-            <p class="tech">HTML</p> <p class="level">Advanced</p>
+            <span class="tech">HTML</span> <span class="level">Advanced</span>
           </li>
           <li class="skill">
-            <p>CSS</p> <p>Intermediate</p>
+            <span class="tech">CSS</span> <span class="level">Intermediate</span>
           </li>
           <li class="skill">
-            <p>Javascript</p> <p>Intermediate</p>
+            <span class="tech">Javascript</span> <span class="level">Intermediate</span>
           </li>
           <li class="skill">
-            <p>React.js</p> <p>Intermediate</p>
+            <span class="tech">React.js</span> <span class="level">Intermediate</span>
           </li>
           <li class="skill">
-            <p>Java</p> <p>Begginer</p>
+            <span class="tech">Java</span> <span class="level">Begginer</span>
           </li>
           <li class="skill">
-          <p>Python</p> <p>Intermediate</p>
+          <span class="tech">Python</span> <span class="level">Intermediate</span>
           </li>
           <li class="skill">
-          <p>Linux</p> <p>Full-time User</p>
+          <span class="tech">Linux</span> <span class="level">Full-time User</span>
           </li>
         </ul>
       </div>

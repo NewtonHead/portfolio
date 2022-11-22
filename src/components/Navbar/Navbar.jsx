@@ -4,10 +4,9 @@ import {FaBars} from "react-icons/fa"
 
 function Navbar(props) {
   const [hidden, isHidden] = useState(true);
-  const mediaQuerie = window.matchMedia('(max-width 600px)')
   
   const openDropdown = () => {
-    if (hidden == true) {
+    if (hidden === true) {
       isHidden(false)
       document.getElementById('navbar-list').style.animation = 'growDown 300ms ease-in-out forwards'
       document.getElementById('navbar-list').classList.remove('hidden')
