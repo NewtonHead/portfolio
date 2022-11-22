@@ -4,7 +4,7 @@ function About() {
       <h1 id="aboutTitle">About</h1>
       <div className="container">
         <img src="/images/portfolio-image.jpg" alt="" srcset="" />
-        <h2>Who am i?</h2>
+        <h2 id="whoami">Who am i?</h2>
         <p id="paragraph">My name is Santiago, i live in Argentina
         and i am an independent Front-end developer
         </p>

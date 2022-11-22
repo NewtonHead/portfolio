@@ -118,8 +118,7 @@ li {
 #welcome-text h2 {
   font-size: 1.5rem;
   height: 4rem;
-  width: inherit;
-  margin: 1rem;
+  margin: 0;
 }
 
 #workButton {
@@ -249,23 +248,25 @@ p {
 }
 
 #aboutTitle {
-  width: 5rem;
+  font-size: 1.75rem;
   margin: auto;
   margin-top: 5rem;
-  border-bottom-color: red;
-  border-bottom-style: solid;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  color: var(--oxford-blue);
 }
 
 @media only screen and (max-device-width: 601px) {
-  h2 {
-    border-bottom-style: solid;
-    border-bottom-color: var(--oxford-blue);
-    width: 8rem;
-    margin-left: auto;
-    margin-right: auto;
+  #whoami {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    color: var(--oxford-blue);
   }
 
   .container {
+    margin-top: 2rem;
     height: 60rem;
     width: 20rem;
     flex-direction: column;
