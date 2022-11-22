@@ -60,44 +60,6 @@ li {
   justify-content: center;
 }
 
-@media only screen and (min-device-width:601px) {
-  .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #navbar-list {
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .navbar-item-button {
-    padding: 0.25rem;
-    position: relative;
-  }
-
-  .navbar-item-button::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--heliotrope-gray);
-    transition: width 0.25s ease-out;
-  }
-
-  .navbar-item-button:hover::before {
-    width: 100%;
-    right: auto;
-    left: 0;
-  }
-  
-}
-
 /* ---------------- */
 
 #welcome {
@@ -153,7 +115,86 @@ li {
   position: absolute;
 }
 
-@media only screen and (max-device-width: 600px) {
+/* --------- */
+
+#about {
+  height: 100vh;
+  background-color: white;
+}
+
+.container {
+  width: 60rem;
+  height: 20rem;
+  margin: auto;
+  margin-top: 5rem;
+  display: flex;
+}
+
+img {
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+  padding: 1rem;
+  
+}
+
+p {
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+  width: 40rem;
+  text-align: center;
+}
+
+#aboutTitle {
+  font-size: 1.75rem;
+  margin: auto;
+  margin-top: 5rem;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  color: var(--oxford-blue);
+}
+
+@media only screen and (min-device-width:601px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #navbar-list {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-item-button {
+    padding: 0.25rem;
+    position: relative;
+  }
+
+  .navbar-item-button::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--heliotrope-gray);
+    transition: width 0.25s ease-out;
+  }
+
+  .navbar-item-button:hover::before {
+    width: 100%;
+    right: auto;
+    left: 0;
+  }
+  
+}
+
+@media only screen and (max-device-width: 601px) {
   .hidden {
     display: none;
   }
@@ -214,50 +255,7 @@ li {
         transform: scaleY(1)
     }
   }
-}
-
-/* --------- */
-
-#about {
-  height: 100vh;
-  background-color: white;
-}
-
-.container {
-  width: 60rem;
-  height: 20rem;
-  margin: auto;
-  margin-top: 5rem;
-  display: flex;
-}
-
-img {
-  border-radius: 50%;
-  width: 20rem;
-  height: 20rem;
-  padding: 1rem;
   
-}
-
-p {
-  display: flex;
-  align-items: center;
-  margin: 2rem;
-  width: 40rem;
-  text-align: center;
-}
-
-#aboutTitle {
-  font-size: 1.75rem;
-  margin: auto;
-  margin-top: 5rem;
-  width: 100%;
-  text-align: center;
-  font-weight: 600;
-  color: var(--oxford-blue);
-}
-
-@media only screen and (max-device-width: 601px) {
   #whoami {
     width: 100%;
     text-align: center;
