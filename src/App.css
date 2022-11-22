@@ -7,6 +7,7 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: 400;
   list-style: none;
+  text-decoration: none;
 }
 
 :root {
@@ -27,15 +28,10 @@
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
-a { 
-  color: var(--color-1);
-  text-decoration: none;
-  text-align: center;
-}
-
 .navbar {
   height: 3rem;
   background-color: var(--oxford-blue);
+  margin-bottom: 2rem;
   position: sticky;
   top: 0;
 }
@@ -45,16 +41,14 @@ a {
 }
 
 .navbar-item-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: var(--almond);
 }
 
-.skill {
+.all-centered {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 /* ---------------- */
@@ -125,21 +119,20 @@ img {
 }
 
 p {
-  display: flex;
-  align-items: center;
   margin: 2rem;
   width: 40rem;
-  text-align: center;
 }
 
-#aboutTitle {
-  font-size: 1.75rem;
-  margin: auto;
-  margin-top: 5rem;
-  width: 100%;
+#projects {
+  background-color: rgb(230, 230, 230);
+  height: 100vh;
+}
+
+.title {
   text-align: center;
   font-weight: 600;
   color: var(--oxford-blue);
+  widows: 100%;
 }
 
 @media only screen and (min-device-width:601px) {
@@ -221,7 +214,6 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--almond);
     width: 100vw;
     background-color: var(--oxford-blue);
   }
@@ -240,13 +232,6 @@ p {
     100% {
         transform: scaleY(1)
     }
-  }
-  
-  #whoami {
-    width: 100%;
-    text-align: center;
-    font-weight: 600;
-    color: var(--oxford-blue);
   }
 
   .container {
