@@ -2,7 +2,7 @@ function Welcome(props) {
 
   return (
     <section id="welcome">
-      <div className="card">
+      <div className="welcome-card">
             <div id="welcome-text">
                 <h1>{props.title}</h1>
                 <h2>{props.subTitle}</h2>
