@@ -19,12 +19,12 @@ function Navbar(props) {
 
   return (
     <nav className="navbar">
-      <span className="navbar-dropdown-button" onClick={openDropdown}><FaBars /></span>
-      <ul id="navbar-list" className="hidden">
+      <span className="navbar-dropdown-button almond flex-centered absolute" onClick={openDropdown}><FaBars /></span>
+      <ul id="navbar-list" className="hidden absolute">
         {props.data.map((data, index) =>{
           return (
             <li key={index}>
-              <a className={data.className + ' noselect'} href={"#" + data.text}>{data.text}</a>
+              <a className={data.className + ' noselect almond'} href={"#" + data.text}>{data.text}</a>
               </li>
           )
         })}
