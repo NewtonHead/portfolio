@@ -1,3 +1,5 @@
+import ProjectCard from "./ProjectCard"
+
 const projectList = [
     {
         url: "https://i.imgur.com/yOsWtBf.png",
@@ -19,10 +21,7 @@ function Projects() {
             <h2 class="title text-centered oxford-blue bold">Check some of my projects at codepen!</h2>
             {projectList.map((project, index) => {
                 return (
-                    <article className="card">
-                        <img src={project.url} key={index} alt="" srcset="" className="thumbnail flex-centered text-centered"/>
-                        <span className="project-button text-centered flex-centered oxford-blue bold noselect absolute">{project.title}</span>
-                    </article>
+                    <ProjectCard url={project.url} title={project.title} />
                 )
             })}
         </section>
