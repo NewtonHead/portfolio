@@ -302,24 +302,6 @@ p {
     margin: auto;
   }
 
-  .project-button {
-    height: 3.5rem;
-    width: 9rem;
-    border-width: 2px;
-    border-color: var(--almond);
-    border-style: solid;
-    background-color: rgba(241, 218, 196, 0.5);;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .card {
-    position: relative;
-    height: 75vw;
-    width: 75vw;
-    margin: auto;
-  }  
 }
 
 @keyframes growDown {
