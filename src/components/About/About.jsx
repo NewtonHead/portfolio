@@ -1,3 +1,9 @@
+const skillList = 
+  [{skill: "HTML", level: "Advanced"}, {skill: "CSS", level: "Intermediate"},
+  {skill: "Javascript", level: "Intermediate"}, {skill: "React.js", level: "Intermediate"},
+  {skill: "Java", level: "Begginer"}, {skill: "Python", level: "Intermediate"},
+  {skill: "Linux", level: "Full-time user"}]
+
 function About() {
   return (
     <section id="about">
@@ -10,27 +16,13 @@ function About() {
         </p>
 
         <ul id="skills">
-          <li class="flex-centered text-centered">
-            <span class="tech bold almond text-centered">HTML</span> <span class="level bold oxford-blue text-centered">Advanced</span>
-          </li>
-          <li class="flex-centered text-centered">
-            <span class="tech bold almond text-centered">CSS</span> <span class="level bold oxford-blue text-centered">Intermediate</span>
-          </li>
-          <li class="flex-centered text-centered">
-            <span class="tech bold almond text-centered">Javascript</span> <span class="level bold oxford-blue text-centered">Intermediate</span>
-          </li>
-          <li class="flex-centered text-centered">
-            <span class="tech bold almond text-centered">React.js</span> <span class="level bold oxford-blue text-centered">Intermediate</span>
-          </li>
-          <li class="flex-centered text-centered">
-            <span class="tech bold almond text-centered">Java</span> <span class="level bold oxford-blue text-centered">Begginer</span>
-          </li>
-          <li class="flex-centered text-centered">
-            <span class="tech bold almond text-centered">Python</span> <span class="level bold oxford-blue text-centered">Intermediate</span>
-          </li>
-          <li class="flex-centered text-centered">
-            <span class="tech bold almond text-centered">Linux</span> <span class="level bold oxford-blue text-centered">Full-time User</span>
-          </li>
+          {skillList.map((skill) => {
+            return (
+              <li className="flex-centered text-centered">
+                <span className="tech bold almond text-centered">{skill.skill}</span> <span className="level bold oxford-blue text-centered">{skill.level}</span>
+              </li>
+            )
+          })}
         </ul>
       </div>
     </section>
