@@ -289,10 +289,16 @@ p {
     border-width: 2px;
     border-color: var(--almond);
     border-style: solid;
-    background-color: rgba(241, 218, 196, 0.5);;
+    background-color: rgba(241, 218, 196, 0.5);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    -webkit-transition: background-color 100ms linear !important;
+    transition: background-color 100ms linear !important;
+  }
+
+  .project-button:hover, .project-button:active {
+    background-color:rgba(241, 218, 196, 0.9);
   }
   
   .card {
