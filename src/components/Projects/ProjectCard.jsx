@@ -17,7 +17,8 @@ function ProjectCard(props) {
                         alt="Project thumbnail"
                         onClick={() => setWasClicked(!wasClicked)}
                         />
-                        <button
+                        <a
+                            href={props.redirect}
                             className="project-button text-centered flex-centered oxford-blue bold noselect absolute"
                             style={ 
                                 {
@@ -29,7 +30,7 @@ function ProjectCard(props) {
                             }>
                             
                             {props.title}
-                        </button>
+                        </a>
                     </article> 
                 :
                     <article 
@@ -43,10 +44,11 @@ function ProjectCard(props) {
                                 style= { {filter: isBlur ? 'blur(2px)' : "none"} }
                                 alt="Project thumbnail"
                             />
-                            <button
+                            <a
+                                href={props.redirect}
                                 className="project-button text-centered flex-centered oxford-blue bold noselect absolute">
                                 {props.title}
-                            </button>
+                            </a>
                     </article> 
             }}
         </Media>
