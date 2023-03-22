@@ -27,8 +27,28 @@
   color: var(--almond);
 }
 
+.almond-background {
+  background-color: var(--almond);
+}
+
 .oxford-blue {
   color: var(--oxford-blue);
+}
+
+.oxford-blue-background {
+  background-color: var(--oxford-blue);
+}
+
+.xiketic {
+  color: var(--xiketic)
+}
+
+.xiketic-background {
+  background-color: var(--xiketic);
+}
+
+.gray-background {
+  background-color: rgb(230, 230, 230);
 }
 
 .noselect {
@@ -50,7 +70,6 @@ section {
 
 .navbar {
   height: 3rem;
-  background-color: var(--oxford-blue);
   position: sticky;
   z-index: 10;
   top: 0;
@@ -78,9 +97,9 @@ section {
 /* ---------------- */
 
 #welcome {
-  background-color: var(--xiketic);
   height: 100vh;
 }
+
 
 #welcome-text, #welcome-text h2 {
   font-size: 1.5rem;
@@ -90,7 +109,6 @@ section {
 
 #workButton {
   font-size: 1.5rem; 
-  background-color: var(--xiketic);
   -webkit-transition: background-color 400ms linear, color 400ms linear;
           transition: background-color 400ms linear, color 400ms linear;
   height: 2.5rem;
@@ -111,10 +129,6 @@ section {
 
 /* --------- */
 
-#about {
-  background-color: white;
-}
-
 .container {
   width: 60rem;
   height: auto;
@@ -133,10 +147,6 @@ section {
 p {
   margin: 2rem;
   width: 40rem;
-}
-
-#projects {
-  background-color: rgb(230, 230, 230);
 }
 
 .title {
@@ -214,7 +224,6 @@ p {
     padding: 0.25rem 0 0.25rem 0;
     width: 100vw;
     padding: 0.25rem 0 0.25rem 0;
-    background-color: var(--oxford-blue);
   }
 
   .navbar-item-button:hover, .navbar-item-button:active {
@@ -254,7 +263,6 @@ p {
   }
 
   .tech {
-    background-color: var(--oxford-blue);
     height: 100%;
     width: 33%;
     padding: 0.33rem;
@@ -262,7 +270,6 @@ p {
 
   .level {
     height: 100%;
-    background-color: var(--almond);
     padding: 0.33rem;
     width: 66%;
   }

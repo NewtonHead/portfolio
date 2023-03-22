@@ -18,7 +18,7 @@ function Navbar(props) {
   }
 
   return (
-    <nav className="navbar">
+    <nav className="navbar oxford-blue-background">
       <span className="navbar-dropdown-button almond flex-centered absolute" onClick={openDropdown}><FaBars /></span>
       <ul id="navbar-list" className="hidden absolute">
         {props.data.map((data, index) =>{

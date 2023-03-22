@@ -20,7 +20,7 @@ const projectList = [
 
 function Projects() {
     return (
-        <section id="projects">
+        <section id="projects" className="gray-background">
             <h2 class="title text-centered oxford-blue bold">Check some of my projects at codepen!</h2>
             {projectList.map((project, index) => {
                 return (

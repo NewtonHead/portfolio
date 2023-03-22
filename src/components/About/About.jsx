@@ -19,7 +19,7 @@ function About() {
           {skillList.map((skill) => {
             return (
               <li className="flex-centered text-centered">
-                <span className="tech bold almond text-centered">{skill.skill}</span> <span className="level bold oxford-blue text-centered">{skill.level}</span>
+                <span className="tech bold almond text-centered oxford-blue-background">{skill.skill}</span> <span className="level bold oxford-blue text-centered almond-background">{skill.level}</span>
               </li>
             )
           })}
