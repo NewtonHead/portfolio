@@ -153,6 +153,21 @@ p {
   width: 100%;
 }
 
+.mediaButtonsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.mediaButton {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.mediaButton:hover {
+  transform: scale(1.1);
+  animation: bounce 0.5s;
+}
+ 
 @media only screen and (min-device-width:601px) {
 
   .navbar {
@@ -315,6 +330,9 @@ p {
     margin: auto;
   }
 
+  .mediaButton {
+    margin: 0.5rem 1rem 0.5rem 1rem;
+  }
 }
 
 @keyframes growDown {
@@ -326,5 +344,17 @@ p {
   }
   100% {
       transform: scaleY(1)
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1.1);
   }
 }
