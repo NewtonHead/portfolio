@@ -7,7 +7,7 @@ const githubLink = "https://github.com/NewtonHead"
 function MediaButton(props) {
     return (
         <a 
-        className="almond mediaButton"
+        className="xiketic mediaButton"
         href={props.media === "linkedin" ? linkedinLink : props.media === "github" ? githubLink : "#"}
         >
             {props.media === "linkedin" ? <AiOutlineLinkedin size={"2rem"}/> : 
