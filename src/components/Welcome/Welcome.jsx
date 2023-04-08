@@ -7,7 +7,7 @@ function Welcome(props) {
                 <h1>{props.title}</h1>
                 <h2>{props.subTitle}</h2>
             </div>
-            <button id="workButton" className="almond xiketic-background">{props.buttonText}</button>
+            <button id="workButton" className="fadeAnimation ghostButton almond xiketic-background">{props.buttonText}</button>
         </div>
     </section>
   )
