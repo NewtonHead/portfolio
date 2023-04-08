@@ -79,7 +79,6 @@ section {
   display: none;
 }
 
-
 .flex-centered {
   display: flex;
   align-items: center;
@@ -109,19 +108,25 @@ section {
 
 #workButton {
   font-size: 1.5rem; 
-  -webkit-transition: background-color 400ms linear, color 400ms linear;
-          transition: background-color 400ms linear, color 400ms linear;
-  height: 2.5rem;
   width: 15rem;
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 0.25rem;
-  border-color: var(--almond);
   margin: 1rem;
   margin-top: 2rem;
 }
 
-#workButton:hover, #workButton:active {
+.fadeAnimation {
+  -webkit-transition: background-color 400ms linear, color 400ms linear;
+  transition: background-color 400ms linear, color 400ms linear;
+}
+
+.ghostButton {
+  border-color: var(--heliotrope-gray);
+  border-radius: 0.25rem;
+  border-style: solid;
+  border-width: 1px;
+  padding: 0.25rem;
+}
+
+.fadeAnimation:hover, .fadeAnimation:active {
   background-color:var(--heliotrope-gray);
   color: white;
   cursor: pointer;
@@ -167,7 +172,23 @@ p {
   transform: scale(1.1);
   animation: bounce 0.5s;
 }
- 
+
+form {
+  margin: 1rem 3rem 1rem 3rem;
+}
+
+.inputArea {
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  margin-bottom: 1rem;
+  border-color: var(--heliotrope-gray);
+}
+
+#submitButton {
+  float: right;
+}
+
 @media only screen and (min-device-width:601px) {
 
   .navbar {
@@ -332,6 +353,10 @@ p {
 
   .mediaButton {
     margin: 0.5rem 1rem 0.5rem 1rem;
+  }
+
+  .inputArea {
+    width: 100%;
   }
 }
 
