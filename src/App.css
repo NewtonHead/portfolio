@@ -189,6 +189,10 @@ form {
   float: right;
 }
 
+footer {
+  height: 3rem;
+}
+
 @media only screen and (min-device-width:601px) {
 
   .navbar {

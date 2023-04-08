@@ -5,6 +5,7 @@ import Welcome from './components/Welcome/Welcome';
 import About from './components/About/About';
 import Media from './components/Media/Media'
 import Contact from './components/Contact/Contact'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Media />
       <Contact />
+      <Footer />
     </div>
   );
 }
