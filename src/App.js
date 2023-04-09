@@ -10,7 +10,7 @@ import Footer from './components/Footer/Footer'
 function App() {
   return (
     <div>
-      <Welcome title="Santiago Lobo" subTitle="React developer" buttonText="Check my work!"/>
+      <Welcome paragraph="Hello, my name is Santiago Lobo and i am a web developer :)" buttonText="Check my work!"/>
       <Navbar data={navbarData} />
       <About />
       <Media />

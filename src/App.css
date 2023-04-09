@@ -99,11 +99,12 @@ section {
   height: 100vh;
 }
 
+.welcome-card {
+  width: 66%;
+}
 
-#welcome-text, #welcome-text h2 {
+#welcome-text {
   font-size: 1.5rem;
-  height: 4rem;
-  margin: 1rem;
 }
 
 #workButton {
@@ -204,7 +205,6 @@ footer {
   #navbar-list {
     width: 80%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
 
