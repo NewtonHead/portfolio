@@ -7,11 +7,11 @@ const skillList =
 function About() {
   return (
     <section id="about">
-      <h1 id="aboutTitle" class="title text-centered bold oxford-blue">About</h1>
+      <h1 id="aboutTitle" className="title text-centered bold oxford-blue">About</h1>
       <div className="container">
         <img src="/images/portfolio-image.jpg" alt="" srcset="" id="me"/>
-        <h2 id="whoami" class="title text-centered bold oxford-blue">Who am i?</h2>
-        <p id="paragraph" class="flex-centered text-centered">My name is Santiago, i live in Argentina
+        <h2 id="whoami" className="title text-centered bold oxford-blue">Who am i?</h2>
+        <p id="paragraph" className="flex-centered text-centered">My name is Santiago, i live in Argentina
         and i am an independent Front-end developer
         </p>
 
