@@ -29,7 +29,12 @@ function Navbar(props) {
 
   return (
     <nav className="navbar oxford-blue-background">
-      <span className="navbar-dropdown-button almond flex-centered absolute desktop-hidden" onClick={openDropdown}><FaBars /></span>
+      <span 
+      className="navbar-dropdown-button almond flex-centered absolute desktop-hidden" 
+      onClick={openDropdown}
+      aria-label="Menu">
+        <FaBars />
+      </span>
       <ul id="navbar-list" className="hidden absolute" ref={navbarList}>
         {props.data.map((data, index) =>{
           return (
