@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { useState } from "react";
 import {FaBars} from "react-icons/fa"
 
@@ -18,6 +18,14 @@ function Navbar(props) {
       navbarList.current.style.animation = ""
     }
   }
+
+  useEffect(() => {
+    const onAnimationEnd = () => {
+      navbarList.current.removeEventListener("animationend", onAnimationEnd);
+      navbarList.current.classList.remove("growDown");
+    };
+    navbarList.current.addEventListener("animationend", onAnimationEnd);
+  }, []);
 
   return (
     <nav className="navbar oxford-blue-background">
