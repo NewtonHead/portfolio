@@ -1,7 +1,7 @@
 import NavbarItem from "./NavbarItem";
 
 const data = ['Home', 'About', 'Projects', 'Thoughts', 'Contact'];
-const classes = 'navbar-item-button flex-centered text-centered oxford-blue-background';
+const classes = 'navbar-item-button flex flex-centered text-centered oxford-blue-background';
 
 const navbarData = [];
 

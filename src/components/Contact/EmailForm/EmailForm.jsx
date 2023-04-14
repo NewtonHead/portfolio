@@ -36,7 +36,7 @@ function EmailForm() {
 
     return (
         <form onSubmit={handleSubmit}>
-            <div className="flex-centered">
+            <div className="flex flex-centered">
                 <label htmlFor="name" />
                 <input
                     id="name"
@@ -46,7 +46,7 @@ function EmailForm() {
                     placeholder="What's your name?"
                     className="inputArea oxford-blue-background almond bold" />
             </div>
-            <div className="flex-centered">
+            <div className="flex flex-centered">
                 <label htmlFor="email" />
                 <input 
                     id="email"
@@ -56,7 +56,7 @@ function EmailForm() {
                     placeholder="Your email"
                     className="inputArea oxford-blue-background almond bold" />
             </div>
-            <div className="flex-centered">
+            <div className="flex flex-centered">
                 <label htmlFor="message" />
                 <textarea
                     id="message" 

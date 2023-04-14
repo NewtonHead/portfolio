@@ -1,9 +1,9 @@
 function Welcome(props) {
 
   return (
-    <section id="welcome" className="noselect almond flex-centered xiketic-background">
+    <section id="welcome" className="noselect almond flex flex-centered xiketic-background">
       <div className="welcome-card absolute text-centered">
-            <div className="text-centered flex-centered">
+            <div className="text-centered flex flex-centered">
                 <p id="welcome-text">
                   {props.paragraph}
                 </p>

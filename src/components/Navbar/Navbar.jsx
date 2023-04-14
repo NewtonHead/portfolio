@@ -30,7 +30,7 @@ function Navbar(props) {
   return (
     <nav className="navbar oxford-blue-background">
       <span 
-      className="navbar-dropdown-button almond flex-centered absolute desktop-hidden" 
+      className="navbar-dropdown-button almond flex flex-centered absolute desktop-hidden" 
       onClick={openDropdown}
       aria-label="Menu">
         <FaBars />
