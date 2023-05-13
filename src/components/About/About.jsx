@@ -9,7 +9,7 @@ function About() {
     <section id="about">
       <h1 id="aboutTitle" className="title text-centered bold oxford-blue">About</h1>
       <div className="container">
-        <img src="/images/portfolio-image.jpg" alt="" srcset="" id="me" className="flex-centered"/>
+        <img src="/images/portfolio-image.jpg" alt="" srcset="" id="me" className=""/>
         <h2 id="whoami" className="title text-centered bold oxford-blue">Who am i?</h2>
         <p id="paragraph" className="flex-centered text-centered">
           Hi! My name is Santiago, and i am a React Developer residing
